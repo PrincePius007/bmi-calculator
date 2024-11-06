@@ -1,0 +1,129 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image:linear-gradient(to right,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.451)), url('https://img.freepik.com/premium-photo/we-can-this-shot-group-men-exercising-nature_590464-63848.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  
+}
+
+
+
+.app {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background: linear-gradient(135deg, #64b3f4, #c2e9fb);
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  color: #333;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.input-group input {
+  padding: 12px;
+  font-size: 1.1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #64b3f4;
+}
+
+.calculate-btn {
+  padding: 12px;
+  background-color: #64b3f4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.calculate-btn:hover {
+  background-color: #4f9dec;
+  transform: translateY(-3px);
+}
+
+.calculate-btn:active {
+  transform: translateY(1px);
+}
+
+.error {
+  color: red;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.result h3 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.bmi-category {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .card {
+    padding: 20px;
+  }
+}
